@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    tools:context=".CategoryActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select a Category"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/categoryBirthday"
+        android:layout_width="wrap_content"
+        android:layout_height="210dp"
+        android:src="@drawable/birthday_image"
+        android:contentDescription="Birthday Category"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="10dp"
+       />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Birthday Card"
+        android:layout_marginBottom="16dp"
+        />
+
+    <ImageView
+        android:id="@+id/categoryCelebration"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:src="@drawable/celebration_image"
+        android:contentDescription="Celebration Category"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Celebration Card"
+        android:layout_marginBottom="16dp"
+        />
+
+
+</LinearLayout>

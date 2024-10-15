@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CelebrationActivity">
+
+
+    <GridLayout
+        android:id="@+id/grid_layout_categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:layout_marginTop="47dp"
+        android:layout_marginBottom="16dp">
+
+        <!-- Funny Category -->
+        <FrameLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:id="@+id/marriage"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/marriage"
+                android:contentDescription="Funny Category" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Marriage"
+                android:textColor="#FFFFFF"
+                android:background="#80000000"
+                android:padding="8dp" />
+        </FrameLayout>
+
+        <!-- Formal Category -->
+        <FrameLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:id="@+id/christmas"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/christmas"
+                android:contentDescription="Formal Category" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Christmas"
+                android:textColor="#FFFFFF"
+                android:background="#80000000"
+                android:padding="8dp" />
+        </FrameLayout>
+
+        <!-- Friendly Category -->
+        <FrameLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:id="@+id/diwali"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/diwali"
+                android:contentDescription="Friendly Category" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Diwali"
+                android:textColor="#FFFFFF"
+                android:background="#80000000"
+                android:padding="8dp" />
+        </FrameLayout>
+
+        <!-- BestFriend Category -->
+        <FrameLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:id="@+id/ganesh"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ganesh"
+                android:contentDescription="bf Category" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Ganesh Utsav"
+                android:textColor="#FFFFFF"
+                android:background="#80000000"
+                android:padding="8dp" />
+        </FrameLayout>
+
+        <!-- dad Category -->
+        <FrameLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:id="@+id/rakhi"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/rakhi1"
+                android:contentDescription="Dad Category" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Raksha Bandhan"
+                android:textColor="#FFFFFF"
+                android:background="#80000000"
+                android:padding="8dp" />
+        </FrameLayout>
+
+        <!-- mom Category -->
+        <FrameLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:id="@+id/Small_party"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/small_party"
+                android:contentDescription="Mom Category" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Parties"
+                android:textColor="#FFFFFF"
+                android:background="#80000000"
+                android:padding="8dp" />
+
+        </FrameLayout>
+
+    </GridLayout>
+
+</LinearLayout>

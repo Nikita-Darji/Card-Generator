@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".BirthdayActivity">
+
+    <GridLayout
+        android:id="@+id/grid_layout_categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="16dp">
+
+        <!-- Funny Category -->
+        <FrameLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:id="@+id/category_funny"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/funny_category_image"
+                android:contentDescription="Funny Category" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Funny"
+                android:textColor="#FFFFFF"
+                android:background="#80000000"
+                android:padding="8dp" />
+        </FrameLayout>
+
+        <!-- Formal Category -->
+        <FrameLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:id="@+id/category_formal"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/formal_category_image"
+                android:contentDescription="Formal Category" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Formal"
+                android:textColor="#FFFFFF"
+                android:background="#80000000"
+                android:padding="8dp" />
+        </FrameLayout>
+
+        <!-- Friendly Category -->
+        <FrameLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:id="@+id/category_friendly"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/friendly_category_image"
+                android:contentDescription="Friendly Category" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Friendly"
+                android:textColor="#FFFFFF"
+                android:background="#80000000"
+                android:padding="8dp" />
+        </FrameLayout>
+
+        <!-- BestFriend Category -->
+        <FrameLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:id="@+id/category_bf"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bestfriend_category_image"
+                android:contentDescription="bf Category" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Best Friend"
+                android:textColor="#FFFFFF"
+                android:background="#80000000"
+                android:padding="8dp" />
+        </FrameLayout>
+
+        <!-- dad Category -->
+        <FrameLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:id="@+id/category_dad"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/dad_category_image"
+                android:contentDescription="Dad Category" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Dad"
+                android:textColor="#FFFFFF"
+                android:background="#80000000"
+                android:padding="8dp" />
+        </FrameLayout>
+
+        <!-- mom Category -->
+        <FrameLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:id="@+id/category_mom"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mom_category_image"
+                android:contentDescription="Mom Category" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Mom"
+                android:textColor="#FFFFFF"
+                android:background="#80000000"
+                android:padding="8dp" />
+
+        </FrameLayout>
+
+    </GridLayout>
+
+
+</LinearLayout>
