@@ -35,11 +35,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-
 public class CardGenerated extends AppCompatActivity {
-
-    private static final int REQUEST_WRITE_EXTERNAL_STORAGE = 1;
-    private static final String TAG = "GenerateCardActivity";
     private String name;
     private ImageView imageView;
     private Button saveButton;
@@ -55,14 +51,6 @@ public class CardGenerated extends AppCompatActivity {
             return insets;
         });
 
-//
-//        saveButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                saveImageToDCIM();
-//            }
-//        });
-//
         imageView = findViewById(R.id.generatedCardImage);
         saveButton = findViewById(R.id.saveButton);
 
@@ -85,7 +73,6 @@ public class CardGenerated extends AppCompatActivity {
         BitmapDrawable drawable = (BitmapDrawable) imageView.getDrawable();
         Bitmap bitmap = drawable.getBitmap();
 
-        // Get the path to the DCIM directory
         String dcimPath = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM).toString();
         String fileName = "Card" + System.currentTimeMillis() + ".jpg";
         File file = new File(dcimPath, fileName);
@@ -100,18 +87,16 @@ public class CardGenerated extends AppCompatActivity {
     }
 
     private Bitmap drawTextOnBitmap(Bitmap bitmap, String text) {
-        // Create a mutable copy of the Bitmap to allow modifications
         Bitmap mutableBitmap = bitmap.copy(Bitmap.Config.ARGB_8888, true);
 
-        // Create a Canvas object using the mutable Bitmap
         Canvas canvas = new Canvas(mutableBitmap);
 
         // Set up the Paint object for drawing the text
         Paint paint = new Paint();
-        paint.setColor(Color.WHITE); // Text color
-        paint.setTextSize(50); // Text size
-        paint.setAntiAlias(true); // Smooth edges
-        paint.setTextAlign(Paint.Align.CENTER); // Center the text
+        paint.setColor(Color.WHITE);
+        paint.setTextSize(50);
+        paint.setAntiAlias(true);
+        paint.setTextAlign(Paint.Align.CENTER);
 
         Paint backgroundPaint = new Paint();
         backgroundPaint.setColor(Color.argb(80,00,00,00)); // Set the color
